@@ -167,7 +167,7 @@
 }
 
 .flip-clock-wrapper ul.play li.flip-clock-active {
-    @include animation(asd .5s .5s linear both);
+    @include animation(asd .3s .3s linear both);
     z-index: 2;
 }
 
@@ -224,7 +224,7 @@
 
 .flip-clock-wrapper ul.play li.flip-clock-active .down {
     z-index: 2;
-    @include animation(turn .5s .5s linear both);
+    @include animation(turn .3s .3s cubic-bezier(.78,2.18,.12,-0.28) both);
 }
 
 @include keyframes(turn) {
@@ -238,7 +238,7 @@
 
 .flip-clock-wrapper ul.play li.flip-clock-before .up {
     z-index: 2;
-    @include animation(turn2 .5s linear both);
+    @include animation(turn2 .3s linear both);
 }
 
 @include keyframes(turn2) {
@@ -261,7 +261,7 @@
     background: -o-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
     background: -ms-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-    @include animation(show .5s linear both);
+    @include animation(show .3s linear both);
 }
 
 .flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
@@ -271,7 +271,7 @@
     background: -o-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
     background: -ms-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-    @include animation(hide .5s .3s linear both);
+    @include animation(hide .3s .3s linear both);
 }
 
 /*DOWN*/
@@ -283,7 +283,7 @@
     background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-    @include animation(show .5s linear both);
+    @include animation(show .3s linear both);
 }
 
 .flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
@@ -293,7 +293,7 @@
     background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-    @include animation(hide .5s .3s linear both);
+    @include animation(hide .3s .3s linear both);
 }
 
 @include keyframes(show) {
